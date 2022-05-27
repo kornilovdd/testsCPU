@@ -30,9 +30,9 @@ function showResults() {
  */
 function handleAnswers(quiz, question, no, correct) {
     if (!correct) {
-        var answers = question.getElementsByTagName('input');
+        var answers = question.getElementsByTagName("input");
         for (var i = 0; i < answers.length; i++) {
-            if (answers[i].type === "checkbox" || answers[i].type === "radio"){ 
+            if (answers[i].type === "radio" || answers[i].type === "checkbox"){ 
                 // If the current input element is part of the correct answer, highlight it
                 if (quiz.answers[no].indexOf(answers[i].value) > -1) {
                     answers[i].parentNode.classList.add(Quiz.Classes.CORRECT);
@@ -52,8 +52,8 @@ function handleAnswers(quiz, question, no, correct) {
 
 window.onload = function() {
     quiz = new Quiz('quiz', [
-        'с',
-        'с',
+        "c",
+        "c",
         ['b', 'd', 'f'],
         'b',
         'a',

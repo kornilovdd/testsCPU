@@ -2,179 +2,192 @@
 
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset='utf-8'>
-        <script type="text/javascript" src="scripts/quizlib.1.0.1.min.js"></script>
-        <!-- Dev: <script type="text/javascript" src="../../src/quizlib.js"></script>-->
-        <script type="text/javascript" src="scripts/main.js"></script>
-        <link rel="stylesheet" type="text/css" href="styles/quizlib.min.css" media="screen">
-        <!-- Dev: <link rel="stylesheet" type="text/css" href="../../src/quizlib.css" media="screen">-->
-        <link rel="stylesheet" type="text/css" href="styles/stylesheet.css" media="screen">
-        
-        <title>Тест на quizlib библиотеке</title>
-    </head>
 
-    <body>
-        <h2>Базовая и компелксная автоматизация ПЛК CP1 и CJ</h2>
-        <!-- Quiz Results -->
-        <div id="quiz-result" class="card">
-            Вы ответили правильно на  <span id="quiz-percent"></span>% - <span id="quiz-score"></span>/<span id="quiz-max-score"></span><br/>
+<head>
+    <meta charset='utf-8'>
+    <script type="text/javascript" src="scripts/quizlib.1.0.1.min.js"></script>
+    <!-- Dev: <script type="text/javascript" src="../../src/quizlib.js"></script>-->
+    <script type="text/javascript" src="scripts/main.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles/quizlib.min.css" media="screen">
+    <!-- Dev: <link rel="stylesheet" type="text/css" href="../../src/quizlib.css" media="screen">-->
+    <link rel="stylesheet" type="text/css" href="styles/stylesheet.css" media="screen">
+
+    <title>Тест на quizlib библиотеке</title>
+</head>
+
+<body>
+    <h2>Базовая и компелксная автоматизация ПЛК CP1 и CJ</h2>
+    <!-- Quiz Results -->
+    <div id="quiz-result" class="card">
+        Вы ответили правильно на <span id="quiz-percent"></span>% вопросов - <span id="quiz-score"></span>/<span
+            id="quiz-max-score"></span><br />
+    </div>
+
+    <!-- Quiz Container -->
+    <div id="quiz">
+        <!-- Question 1 -->
+        <div class="card quizlib-question">
+            <div class="quizlib-question-title">Какое максимальное ко-во точек (входов/выходов) возможно использовать в
+                ПЛК СP1H?</div>
+            <div class="quizlib-question-answers">
+                <ul>
+                    <li><label><input type="radio" name="q1" value="a"> 160</label></li>
+                    <li><label><input type="radio" name="q1" value="b"> 320</label></li>
+                    <li><label><input type="radio" name="q1" value="c"> 180</label></li>
+                </ul>
+            </div>
         </div>
-        
-        <!-- Quiz Container -->
-        <div id="quiz">
-            <!-- Question 1 -->
-            <div class="card quizlib-question">
-                <div class="quizlib-question-title">Какой размер области памяти W и H у ПЛК серии CP1 и СJ?</div>
-                <div class="quizlib-question-answers">
-                    <ul>
-                        <li><label><input type="radio" name="q1" value="a"> 6144 слов</label></li>
-                        <li><label><input type="radio" name="q1" value="b"> 960 слов</label></li>
-                        <li><label><input type="radio" name="q1" value="c"> 512 слов</label></li>
-                    </ul>
-                </div>
+        <!-- Question 2 -->
+        <div class="card quizlib-question">
+            <div class="quizlib-question-title">Какое максимальное ко-во точек (входов/выходов) возможно использовать в
+                ПЛК СP1H?</div>
+            <div class="quizlib-question-answers">
+                <ul>
+                    <li><label><input type="radio" name="q2" value="a"> 160</label></li>
+                    <li><label><input type="radio" name="q2" value="b"> 320</label></li>
+                    <li><label><input type="radio" name="q2" value="c"> 180</label></li>
+                </ul>
             </div>
-            <!-- Question 2 -->
-            <div class="card quizlib-question">
-                <div class="quizlib-question-title">Какой из модулей последовательной связи ПЛК серии CP1L можно использовать на дистанцию более 50 метров?</div>
-                <div class="quizlib-question-answers">
-                    <ul>
-                        <li><label><input type="radio" name="q2" value="a"> CP1W-CIF11</label></li>
-                        <li><label><input type="radio" name="q2" value="b"> CP1W-CIF0</label></li>
-                        <li><label><input type="radio" name="q2" value="c"> CP1W-CIF12</label></li>
-                    </ul>
-                </div>
-            </div>
-            <!-- Question 3 -->
-            <div class="card quizlib-question">
-                <div class="quizlib-question-title">Какие из ниже представленных ПЛК имеют встроенный порт Ethernet ?(Возможно несколько правильных ответов).</div>
-                <div class="quizlib-question-answers">
-                    <ul>
-                        <li><label><input type="checkbox" name="q3" value="a"> СP1E-N20D</label></li>
-                        <li><label><input type="checkbox" name="q3" value="b"> CP1L-EM30D</label></li>
-                        <li><label><input type="checkbox" name="q3" value="c"> CP1H-XA40D</label></li>
-                        <li><label><input type="checkbox" name="q3" value="d"> CJ2M-CPU34</label></li>
-                        <li><label><input type="checkbox" name="q3" value="e"> CJ2M-CPU13</label></li>
-                        <li><label><input type="checkbox" name="q3" value="f"> СP2E-N30D</label></li>
-                    </ul>
-                </div>
-            </div>
-            <!-- Question 4 -->
-            <div class="card quizlib-question">
-                <div class="quizlib-question-title">Какое максимальное ко-во точек (входов/выходов) возможно использовать в ПЛК СP1H?</div>
-                <div class="quizlib-question-answers">
-                    <ul>
-                        <li><label><input type="radio" name="q4" value="a"> 160</label></li>
-                        <li><label><input type="radio" name="q4" value="b"> 320</label></li>
-                        <li><label><input type="radio" name="q4" value="c"> 180</label></li>
-                    </ul>
-                </div>
-            </div>
-            <!-- Question 5 -->
-            <div class="card quizlib-question">
-                <div class="quizlib-question-title">Какой из перечисленных модулей в составе CJ обеспечивает подключение устройств по протоколу Modbus RTU?</div>
-                <div class="quizlib-question-answers">
-                    <ul>
-                        <li><label><input type="radio" name="q5" value="a"> CJ1W-SCU31</label></li>
-                        <li><label><input type="radio" name="q5" value="b"> CJ1W-SCU21</label></li>
-                        <li><label><input type="radio" name="q5" value="c"> CJ1W-SPU01</label></li>
-                    </ul>
-                </div>
-            </div>
-            <!-- Question 6 -->
-            <div class="card quizlib-question">
-                <div class="quizlib-question-title">Какую особенность имеет ЦПУ CP1H-XA?</div>
-                <div class="quizlib-question-answers">
-                    <ul>
-                        <li><label><input type="radio" name="q6" value="a"> Дополнительные импульсные выходы</label></li>
-                        <li><label><input type="radio" name="q6" value="b"> Встроенные аналоговые входы/выходы</label></li>
-                        <li><label><input type="radio" name="q6" value="c"> Питание только переменным током</label></li>
-                    </ul>
-                </div>
-            </div>
-            <!-- Question 7 -->
-            <div class="card quizlib-question">
-                <div class="quizlib-question-title">Какое соотношение входов/выходов у ПЛК серии CP1L-EM30DT ?</div>
-                <div class="quizlib-question-answers">
-                    <ul>
-                        <li><label><input type="radio" name="q7" value="a"> 16/14</label></li>
-                        <li><label><input type="radio" name="q7" value="b"> 20/10</label></li>
-                        <li><label><input type="radio" name="q7" value="c"> 18/12</label></li>
-                    </ul>
-                </div>
-            </div>
-            <!-- Question 8 -->
-            <div class="card quizlib-question">
-                <div class="quizlib-question-title">Какие языки программирования стандарта МЭК (IEC) 61131-3поддерживает ПЛК серии CJ2M?(Возможно несколько правильных ответов).</div>
-                <div class="quizlib-question-answers">
-                    <ul>
-                        <li><label><input type="checkbox" name="q8" value="a"> Sequential Function Chart (SFC)</label></li>
-                        <li><label><input type="checkbox" name="q8" value="b"> Function Block Diagram (FBD)</label></li>
-                        <li><label><input type="checkbox" name="q8" value="c"> Ladder Diagram (LD)</label></li>
-                        <li><label><input type="checkbox" name="q8" value="d"> Structured Text (ST)</label></li>
-                        <li><label><input type="checkbox" name="q8" value="e"> Instruction List (IL)</label></li>
-                    </ul>
-                </div>
-            </div>
-            <!-- Question 9 -->
-            <div class="card quizlib-question">
-                <div class="quizlib-question-title">Сколько модулей расширения можно подключить к ЦПУ CP1H?</div>
-                <div class="quizlib-question-answers">
-                    <ul>
-                        <li><label><input type="radio" name="q9" value="a"> Не более 7-ми</label></li>
-                        <li><label><input type="radio" name="q9" value="b"> До 3-х</label></li>
-                        <li><label><input type="radio" name="q9" value="c"> Не более одного</label></li>
-                    </ul>
-                </div>
-            </div>
-            <!-- Question 10 -->
-            <div class="card quizlib-question">
-                <div class="quizlib-question-title">Какую функцию выполняет светоиндикатор PRPHL?</div>
-                <div class="quizlib-question-answers">
-                    <ul>
-                        <li><label><input type="radio" name="q10" value="a"> Светится при выполнении программы</label></li>
-                        <li><label><input type="radio" name="q10" value="b"> Горит при подаче питания на ЦПУ</label></li>
-                        <li><label><input type="radio" name="q10" value="c"> Мигает при обмене данными через порт</label></li>
-                    </ul>
-                </div>
-            </div>
-            <!-- Question 11 -->
-            <div class="card quizlib-question">
-                <div class="quizlib-question-title">К какому из ниже представленных ПЛК возможно подключить встраиваемые платы расширения CP1W-MAB,ADB,DAB?</div>
-                <div class="quizlib-question-answers">
-                    <ul>
-                        <li><label><input type="radio" name="q11" value="a"> CP1E</label></li>
-                        <li><label><input type="radio" name="q11" value="b"> CP1L-E</label></li>
-                        <li><label><input type="radio" name="q11" value="c"> CP1L</label></li>
-                        <li><label><input type="radio" name="q11" value="d"> CP1H</label></li>
-                    </ul>
-                </div>
-            </div>
-            <!-- Question 12 -->
-            <div class="card quizlib-question">
-                <div class="quizlib-question-title">Какой из ниже представленных ПЛК поддерживает возможность работы с ФБ (функциональный блок)?(Возможно несколько правильных ответов).</div>
-                <div class="quizlib-question-answers">
-                    <ul>
-                        <li><label><input type="checkbox" name="q12" value="a"> CP1E</label></li>
-                        <li><label><input type="checkbox" name="q12" value="b"> CP1L</label></li>
-                        <li><label><input type="checkbox" name="q12" value="c"> CP1H</label></li>
-                    </ul>
-                </div>
-            </div>
-            <!-- Question 13 -->
-            <div class="card quizlib-question">
-                <div class="quizlib-question-title">К какому типу данных не возможно обратиться по битно (xx.xx) в ПЛК серии CP1?</div>
-                <div class="quizlib-question-answers">
-                    <ul>
-                        <li><label><input type="radio" name="q13" value="a"> WR</label></li>
-                        <li><label><input type="radio" name="q13" value="b"> HR</label></li>
-                        <li><label><input type="radio" name="q13" value="c"> DM</label></li>
-                        <li><label><input type="radio" name="q13" value="d"> CIO</label></li>
-                    </ul>
-                </div>
-            </div>
-            <!-- Answer Button -->
-            <button type="button" onclick="showResults();">Проверить ответы</button>
         </div>
-    </body>
+        <!-- Question 3 -->
+        <div class="card quizlib-question">
+            <div class="quizlib-question-title">Какие из ниже представленных ПЛК имеют встроенный порт Ethernet
+                ?(Возможно несколько правильных ответов).</div>
+            <div class="quizlib-question-answers">
+                <ul>
+                    <li><label><input type="checkbox" name="q3" value="a"> СP1E-N20D</label></li>
+                    <li><label><input type="checkbox" name="q3" value="b"> CP1L-EM30D</label></li>
+                    <li><label><input type="checkbox" name="q3" value="c"> CP1H-XA40D</label></li>
+                    <li><label><input type="checkbox" name="q3" value="d"> CJ2M-CPU34</label></li>
+                    <li><label><input type="checkbox" name="q3" value="e"> CJ2M-CPU13</label></li>
+                    <li><label><input type="checkbox" name="q3" value="f"> СP2E-N30D</label></li>
+                </ul>
+            </div>
+        </div>
+        <!-- Question 4 -->
+        <div class="card quizlib-question">
+            <div class="quizlib-question-title">Какое максимальное ко-во точек (входов/выходов) возможно использовать в
+                ПЛК СP1H?</div>
+            <div class="quizlib-question-answers">
+                <ul>
+                    <li><label><input type="radio" name="q4" value="a"> 160</label></li>
+                    <li><label><input type="radio" name="q4" value="b"> 320</label></li>
+                    <li><label><input type="radio" name="q4" value="c"> 180</label></li>
+                </ul>
+            </div>
+        </div>
+        <!-- Question 5 -->
+        <div class="card quizlib-question">
+            <div class="quizlib-question-title">Какой из перечисленных модулей в составе CJ обеспечивает подключение
+                устройств по протоколу Modbus RTU?</div>
+            <div class="quizlib-question-answers">
+                <ul>
+                    <li><label><input type="radio" name="q5" value="a"> CJ1W-SCU31</label></li>
+                    <li><label><input type="radio" name="q5" value="b"> CJ1W-SCU21</label></li>
+                    <li><label><input type="radio" name="q5" value="c"> CJ1W-SPU01</label></li>
+                </ul>
+            </div>
+        </div>
+        <!-- Question 6 -->
+        <div class="card quizlib-question">
+            <div class="quizlib-question-title">Какую особенность имеет ЦПУ CP1H-XA?</div>
+            <div class="quizlib-question-answers">
+                <ul>
+                    <li><label><input type="radio" name="q6" value="a"> Дополнительные импульсные выходы</label></li>
+                    <li><label><input type="radio" name="q6" value="b"> Встроенные аналоговые входы/выходы</label></li>
+                    <li><label><input type="radio" name="q6" value="c"> Питание только переменным током</label></li>
+                </ul>
+            </div>
+        </div>
+        <!-- Question 7 -->
+        <div class="card quizlib-question">
+            <div class="quizlib-question-title">Какое соотношение входов/выходов у ПЛК серии CP1L-EM30DT ?</div>
+            <div class="quizlib-question-answers">
+                <ul>
+                    <li><label><input type="radio" name="q7" value="a"> 16/14</label></li>
+                    <li><label><input type="radio" name="q7" value="b"> 20/10</label></li>
+                    <li><label><input type="radio" name="q7" value="c"> 18/12</label></li>
+                </ul>
+            </div>
+        </div>
+        <!-- Question 8 -->
+        <div class="card quizlib-question">
+            <div class="quizlib-question-title">Какие языки программирования стандарта МЭК (IEC) 61131-3поддерживает ПЛК
+                серии CJ2M?(Возможно несколько правильных ответов).</div>
+            <div class="quizlib-question-answers">
+                <ul>
+                    <li><label><input type="checkbox" name="q8" value="a"> Sequential Function Chart (SFC)</label></li>
+                    <li><label><input type="checkbox" name="q8" value="b"> Function Block Diagram (FBD)</label></li>
+                    <li><label><input type="checkbox" name="q8" value="c"> Ladder Diagram (LD)</label></li>
+                    <li><label><input type="checkbox" name="q8" value="d"> Structured Text (ST)</label></li>
+                    <li><label><input type="checkbox" name="q8" value="e"> Instruction List (IL)</label></li>
+                </ul>
+            </div>
+        </div>
+        <!-- Question 9 -->
+        <div class="card quizlib-question">
+            <div class="quizlib-question-title">Сколько модулей расширения можно подключить к ЦПУ CP1H?</div>
+            <div class="quizlib-question-answers">
+                <ul>
+                    <li><label><input type="radio" name="q9" value="a"> Не более 7-ми</label></li>
+                    <li><label><input type="radio" name="q9" value="b"> До 3-х</label></li>
+                    <li><label><input type="radio" name="q9" value="c"> Не более одного</label></li>
+                </ul>
+            </div>
+        </div>
+        <!-- Question 10 -->
+        <div class="card quizlib-question">
+            <div class="quizlib-question-title">Какую функцию выполняет светоиндикатор PRPHL?</div>
+            <div class="quizlib-question-answers">
+                <ul>
+                    <li><label><input type="radio" name="q10" value="a"> Светится при выполнении программы</label></li>
+                    <li><label><input type="radio" name="q10" value="b"> Горит при подаче питания на ЦПУ</label></li>
+                    <li><label><input type="radio" name="q10" value="c"> Мигает при обмене данными через порт</label>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- Question 11 -->
+        <div class="card quizlib-question">
+            <div class="quizlib-question-title">К какому из ниже представленных ПЛК возможно подключить встраиваемые
+                платы расширения CP1W-MAB,ADB,DAB?</div>
+            <div class="quizlib-question-answers">
+                <ul>
+                    <li><label><input type="radio" name="q11" value="a"> CP1E</label></li>
+                    <li><label><input type="radio" name="q11" value="b"> CP1L-E</label></li>
+                    <li><label><input type="radio" name="q11" value="c"> CP1L</label></li>
+                    <li><label><input type="radio" name="q11" value="d"> CP1H</label></li>
+                </ul>
+            </div>
+        </div>
+        <!-- Question 12 -->
+        <div class="card quizlib-question">
+            <div class="quizlib-question-title">Какой из ниже представленных ПЛК поддерживает возможность работы с ФБ
+                (функциональный блок)?(Возможно несколько правильных ответов).</div>
+            <div class="quizlib-question-answers">
+                <ul>
+                    <li><label><input type="checkbox" name="q12" value="a"> CP1E</label></li>
+                    <li><label><input type="checkbox" name="q12" value="b"> CP1L</label></li>
+                    <li><label><input type="checkbox" name="q12" value="c"> CP1H</label></li>
+                </ul>
+            </div>
+        </div>
+        <!-- Question 13 -->
+        <div class="card quizlib-question">
+            <div class="quizlib-question-title">К какому типу данных не возможно обратиться по битно (xx.xx) в ПЛК серии
+                CP1?</div>
+            <div class="quizlib-question-answers">
+                <ul>
+                    <li><label><input type="radio" name="q13" value="a"> WR</label></li>
+                    <li><label><input type="radio" name="q13" value="b"> HR</label></li>
+                    <li><label><input type="radio" name="q13" value="c"> DM</label></li>
+                    <li><label><input type="radio" name="q13" value="d"> CIO</label></li>
+                </ul>
+            </div>
+        </div>
+        <!-- Answer Button -->
+        <button type="button" onclick="showResults();">Проверить ответы</button>
+    </div>
+</body>
+
 </html>
